@@ -37,9 +37,7 @@ export default async function RootLayout({
       <body>
         <AccessTokenProvider accessToken={accessToken}>
           <ThemeProvider>
-            <Container size="2" align="center">
               {children}
-            </Container>
           </ThemeProvider>
         </AccessTokenProvider>
       </body>
