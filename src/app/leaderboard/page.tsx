@@ -1,12 +1,9 @@
-import { Counter, RelativeTimeRange, Flex, } from "@propeldata/ui-kit";
+import { Leaderboard, Flex, RelativeTimeRange, Sort } from "@propeldata/ui-kit";
 
-export default async function CounterExample() {
+export default async function LeaderboardExample() {
   return (
-    <Flex p="7" align="center" justify="center">
-      <Counter
-        localize
-        card
-        prefixValue="$"
+    <Flex p="1" align="center" justify="center">
+      <Leaderboard
         query={{
           metric: {
             count: {
@@ -15,8 +12,13 @@ export default async function CounterExample() {
               },
             },
           },
-          timeRange: { relative: RelativeTimeRange.LastNDays, n: 30 },
+          timeRange: { relative: RelativeTimeRange.LastNDays, n: 90 },
+          rowLimit: 5,
+          dimensions: [{ columnName: "restaurant_name" }],
+          sort: Sort.Desc,
         }}
+        card
+        chartProps={{ showBarValues: true }}
       />
     </Flex>
   );

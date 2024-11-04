@@ -1,6 +1,6 @@
 import { DataGrid, Sort, Flex } from "@propeldata/ui-kit";
 
-export default async function CounterExample() {
+export default async function DataGridExample() {
   return (
     <Flex p="3" align="center" justify="center">
       <DataGrid
