@@ -5,7 +5,7 @@ export default async function CounterExample() {
     <Flex p="7" align="center" justify="center">
       <DataGrid
         query={{
-          columns: ["timestamp", "restaurant_name", "taco_name", "taco_unit_price"],
+          columns: ["timestamp", "taco_name", "taco_unit_price"],
           dataPool: {
             name: "TacoSoft Demo Data",
           },
