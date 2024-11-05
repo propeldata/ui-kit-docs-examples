@@ -2,7 +2,7 @@ import { Leaderboard, Container, RelativeTimeRange, Sort } from "@propeldata/ui-
 
 export default async function LeaderboardExample() {
   return (
-    <Container p="3">
+    <Container p="4">
       <Leaderboard
         query={{
           metric: {
@@ -17,7 +17,6 @@ export default async function LeaderboardExample() {
           dimensions: [{ columnName: "restaurant_name" }],
           sort: Sort.Desc,
         }}
-        card
         chartProps={{ showBarValues: true }}
       />
     </Container>
