@@ -13,7 +13,7 @@ export default async function PieChartExample() {
             },
           },
           timeRange: { relative: RelativeTimeRange.LastNDays, n: 90 },
-          rowLimit: 5,
+          rowLimit: 3,
           dimension: { columnName: "restaurant_name" },
           sort: Sort.Desc,
 
