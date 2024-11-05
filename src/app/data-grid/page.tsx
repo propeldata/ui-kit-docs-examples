@@ -1,4 +1,8 @@
-import { DataGrid, Sort, Flex } from "@propeldata/ui-kit";
+import {
+  DataGrid,
+  Sort,
+  Flex,
+} from "@propeldata/ui-kit";
 
 export default async function DataGridExample() {
   return (

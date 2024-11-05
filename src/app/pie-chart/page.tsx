@@ -1,4 +1,9 @@
-import { PieChart, Container, RelativeTimeRange, Sort} from "@propeldata/ui-kit";
+import {
+  PieChart,
+  Container,
+  RelativeTimeRange,
+  Sort,
+} from "@propeldata/ui-kit";
 
 export default async function PieChartExample() {
   return (

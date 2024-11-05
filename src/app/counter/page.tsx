@@ -1,4 +1,8 @@
-import { Counter, RelativeTimeRange, Flex, } from "@propeldata/ui-kit";
+import {
+  Counter,
+  RelativeTimeRange,
+  Flex,
+} from "@propeldata/ui-kit";
 
 export default async function CounterExample() {
   return (

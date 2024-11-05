@@ -1,4 +1,9 @@
-import { Leaderboard, Container, RelativeTimeRange, Sort } from "@propeldata/ui-kit";
+import {
+  Leaderboard,
+  Container,
+  RelativeTimeRange,
+  Sort,
+} from "@propeldata/ui-kit";
 
 export default async function LeaderboardExample() {
   return (

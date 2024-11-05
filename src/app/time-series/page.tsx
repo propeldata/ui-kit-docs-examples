@@ -1,6 +1,11 @@
-import { TimeSeries, Container, RelativeTimeRange, TimeSeriesGranularity } from "@propeldata/ui-kit";
+import {
+  TimeSeries,
+  Container,
+  RelativeTimeRange,
+  TimeSeriesGranularity,
+} from "@propeldata/ui-kit";
 
-export default async function PieChartExample() {
+export default async function TimeSeriesExample() {
   return (
     <Container p="5">
       <TimeSeries
