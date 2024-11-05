@@ -1,9 +1,10 @@
-import { PieChart, Container, RelativeTimeRange, Sort} from "@propeldata/ui-kit";
+import { TimeSeries, Container, RelativeTimeRange, TimeSeriesGranularity } from "@propeldata/ui-kit";
 
 export default async function PieChartExample() {
   return (
     <Container p="5">
-      <PieChart
+      <TimeSeries
+        variant="bar"
         query={{
           metric: {
             count: {
@@ -13,14 +14,7 @@ export default async function PieChartExample() {
             },
           },
           timeRange: { relative: RelativeTimeRange.LastNDays, n: 90 },
-          rowLimit: 3,
-          dimension: { columnName: "restaurant_name" },
-          sort: Sort.Desc,
-
-        }}
-        chartProps={{
-          hideTotal: true,
-          legendPosition: "bottom",
+          granularity: TimeSeriesGranularity.Day,
         }}
       />
     </Container>
