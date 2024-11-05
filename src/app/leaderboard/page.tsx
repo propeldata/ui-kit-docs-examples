@@ -2,7 +2,7 @@ import { Leaderboard, Container, RelativeTimeRange, Sort } from "@propeldata/ui-
 
 export default async function LeaderboardExample() {
   return (
-    <Container p="4">
+    <Container p="5">
       <Leaderboard
         query={{
           metric: {
