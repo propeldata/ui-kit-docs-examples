@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { ClientCredentials, ModuleOptions } from "simple-oauth2";
 import "./globals.css";
-import { ThemeProvider, AccessTokenProvider, Container } from "@propeldata/ui-kit";
+import { ThemeProvider, AccessTokenProvider } from "@propeldata/ui-kit";
+import { unstable_noStore as noStore } from "next/cache";
 
 export const metadata: Metadata = {
   title: "Propel Embeddable UI Examples",
@@ -28,6 +29,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  noStore()
+
   // Get a token using the client credentials
   const res = await oauth2Client.getToken({});
   const accessToken = res.token["access_token"] as string;
