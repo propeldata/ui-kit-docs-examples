@@ -19,6 +19,7 @@ export default async function DataGridExample() {
         paginationProps={{
           defaultPageSize: 5
         }}
+        resizable={true}
         prettifyHeaders={true}
         showRowCount={true}
       />
