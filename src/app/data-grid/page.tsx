@@ -2,7 +2,7 @@ import { DataGrid, Sort, Flex } from "@propeldata/ui-kit";
 
 export default async function DataGridExample() {
   return (
-    <Flex p="3" align="center" justify="center">
+    <Flex p="3" justify="center" width="100%">
       <DataGrid
         query={{
           columns: ["timestamp", "taco_name", "taco_unit_price"],

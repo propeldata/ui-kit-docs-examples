@@ -1,8 +1,8 @@
-import { Leaderboard, Flex, RelativeTimeRange, Sort } from "@propeldata/ui-kit";
+import { Leaderboard, Container, RelativeTimeRange, Sort } from "@propeldata/ui-kit";
 
 export default async function LeaderboardExample() {
   return (
-    <Flex p="1" align="center" justify="center">
+    <Container p="3">
       <Leaderboard
         query={{
           metric: {
@@ -20,6 +20,6 @@ export default async function LeaderboardExample() {
         card
         chartProps={{ showBarValues: true }}
       />
-    </Flex>
+    </Container>
   );
 }

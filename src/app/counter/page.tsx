@@ -2,7 +2,7 @@ import { Counter, RelativeTimeRange, Flex, } from "@propeldata/ui-kit";
 
 export default async function CounterExample() {
   return (
-    <Flex p="7" align="center" justify="center">
+    <Flex p="7" justify="center" width="100%">
       <Counter
         localize
         card
