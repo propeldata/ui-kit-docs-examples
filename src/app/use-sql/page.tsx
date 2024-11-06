@@ -18,7 +18,6 @@ function SqlTable() {
   );
 }
 
-// Keep the page component as a server component
 export default function UseSqlExample() {
   return (
     <QueryClientProvider client={queryClient}>
