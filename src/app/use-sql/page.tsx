@@ -9,8 +9,6 @@ function SqlTable() {
     query: 'SELECT * FROM "TacoSoft Demo Data" LIMIT 5'
   });
 
-  const { columns, rows } = data?.sqlV1 ?? {};
-
   return (
     <pre>
       {JSON.stringify(data?.sqlV1?.rows, null, 2)}
