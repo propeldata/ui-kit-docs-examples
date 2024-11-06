@@ -18,6 +18,7 @@ export default async function TimeGrainPickerExample() {
             TimeSeriesGranularity.Month,
             TimeSeriesGranularity.Year,
           ]}
+          defaultOpen
         />
       </FilterProvider>
     </Flex>

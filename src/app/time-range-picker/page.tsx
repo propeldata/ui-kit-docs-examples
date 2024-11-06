@@ -10,6 +10,7 @@ export default async function TimeRangePickerExample() {
       <FilterProvider>
         <TimeRangePicker
           defaultValue={{ value: "last-30-days" }}
+          defaultOpen
         />
       </FilterProvider>
     </Flex>
