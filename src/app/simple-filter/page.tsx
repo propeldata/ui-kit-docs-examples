@@ -13,8 +13,9 @@ export default async function SimpleFilterExample() {
           columnName: "restaurant_name",
           dataPool: { name: "TacoSoft Demo Data" },
           maxValues: 10,
-        }}
-        autocompleteProps={{ placeholder: "Restaurant..." }}
+          }}
+          autocompleteProps={{ placeholder: "Restaurant..." }}
+          defaultOpen
         />
       </FilterProvider>
     </Flex>

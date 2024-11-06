@@ -3,9 +3,8 @@ import {
   Flex,
   GroupBy,
 } from "@propeldata/ui-kit";
-import { config } from "process";
 
-export default async function TimeGrainPickerExample() {
+export default async function GroupByExample() {
   return (
       <Flex p="7" justify="center" width="100%">
         <FilterProvider>
@@ -20,6 +19,7 @@ export default async function TimeGrainPickerExample() {
               "tortilla_name"
             ]}
             prettifyColumnNames={true}
+            defaultOpen
           />
       </FilterProvider>
     </Flex>

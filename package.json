@@ -1,7 +1,7 @@
 {
-  "name": "propel-next-js-starter-app",
+  "name": "propel-ui-kit-examples",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +10,10 @@
   },
   "dependencies": {
     "@propeldata/ui-kit": "0.0.0-canary-20241106151007",
-    "@radix-ui/colors": "^3.0.0",
-    "@radix-ui/react-tabs": "^1.1.0",
-    "@radix-ui/themes": "^3.1.4",
     "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "simple-oauth2": "^5.1.0",
-    "yaml": "^2.6.0"
+    "simple-oauth2": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
