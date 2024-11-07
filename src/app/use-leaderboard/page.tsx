@@ -1,20 +1,23 @@
 'use client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { useCounter, RelativeTimeRange } from "@propeldata/ui-kit";
+import { useLeaderboard, RelativeTimeRange } from "@propeldata/ui-kit";
 
 const queryClient = new QueryClient();
 
-function UseCounter() {
-  const { data } = useCounter({
+function UseLeaderboard() {
+  const { data } = useLeaderboard({
     metric: {
       count: { dataPool: { name: "TacoSoft Demo Data" } },
     },
     timeRange: { relative: RelativeTimeRange.LastNDays, n: 30 },
+    dimensions: [{
+      columnName: 'restaurant_name',
+    }],
   });
 
   return (
     <pre>
-      {JSON.stringify(data?.counter?.value, null, 2)}
+      {JSON.stringify(data?.leaderboard?.rows, null, 2)}
     </pre>
   );
 }
@@ -22,7 +25,7 @@ function UseCounter() {
 export default function UseSqlExample() {
   return (
     <QueryClientProvider client={queryClient}>
-      <UseCounter />
+      <UseLeaderboard />
     </QueryClientProvider>
   );
 }

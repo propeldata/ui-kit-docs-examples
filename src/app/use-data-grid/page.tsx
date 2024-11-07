@@ -11,7 +11,6 @@ function UseDataGrid() {
     timeRange: { relative: RelativeTimeRange.LastNDays, n: 30 },
   });
 
-
   return (
     <pre>
       {JSON.stringify(data?.dataGrid?.rows, null, 2)}
