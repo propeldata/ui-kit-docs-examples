@@ -3,7 +3,6 @@ import {
   Container,
   RelativeTimeRange,
   TimeSeriesGranularity,
-  ThemeProvider,
 } from "@propeldata/ui-kit";
 
 export default async function TimeSeriesExample() {
