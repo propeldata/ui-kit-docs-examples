@@ -6,7 +6,7 @@ import {
   ThemeProvider
 } from "@propeldata/ui-kit";
 
-export default async function TimeSeriesExample() {
+export default async function ColorOverride2Example() {
   return (
     <Container p="5">
       <ThemeProvider accentColor="blue">
