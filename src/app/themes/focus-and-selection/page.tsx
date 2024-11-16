@@ -2,6 +2,7 @@ import {
   Container,
   Flex,
   Text,
+  Link,
   ThemeProvider
 } from "@propeldata/ui-kit";
 
@@ -11,13 +12,13 @@ export default async function FocusAndSelectionExample() {
       <ThemeProvider accentColor="indigo">
         <Flex direction="column" gap="4">
           <Text>
-            View your dashboard metrics in <a href="#">analytics</a>
+            View your dashboard metrics in <Link href="#">analytics</Link>
           </Text>
           <Text color="gray">
-            Compare performance across <a href="#">time periods</a>
+            Compare performance across <Link href="#">time periods</Link>
           </Text>
           <Text color="red">
-            Critical alerts require <a href="#">immediate action</a>
+            Critical alerts require <Link href="#">immediate action</Link>
           </Text>
         </Flex>
       </ThemeProvider>
