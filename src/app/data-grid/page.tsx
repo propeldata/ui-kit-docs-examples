@@ -17,7 +17,7 @@ export default async function DataGridExample() {
           sort: Sort.Desc
         }}
         paginationProps={{
-          defaultPageSize: 5
+          defaultPageSize: 10
         }}
         resizable={true}
         prettifyHeaders={true}
