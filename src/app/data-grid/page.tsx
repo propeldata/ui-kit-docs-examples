@@ -9,15 +9,12 @@ export default async function DataGridExample() {
     <Flex p="3" justify="center" width="100%">
       <DataGrid
         query={{
-          columns: ["timestamp", "taco_name", "taco_unit_price"],
           dataPool: {
             name: "TacoSoft Demo Data",
           },
+          columns: ["timestamp", "taco_name", "taco_unit_price", "toppings"],
           orderByColumn: 1,
           sort: Sort.Desc
-        }}
-        paginationProps={{
-          defaultPageSize: 10
         }}
         resizable={true}
         prettifyHeaders={true}

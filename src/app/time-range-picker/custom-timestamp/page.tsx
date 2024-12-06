@@ -1,31 +1,26 @@
-"use client";
-
 import {
   TimeRangePicker,
   Flex,
   FilterProvider,
   Counter,
+  RelativeTimeRange,
 } from "@propeldata/ui-kit";
 
 export default async function TimeRangePickerExample() {
   return (
     <Flex p="7" justify="center" width="100%">
-      <FilterProvider>
+      <FilterProvider
+        defaultDataPool={{ name: "TacoSoft Demo Data" }}
+        defaultTimeRange={{
+          timestamp: "order_item_generated_at"
+        }}
+      >
         <TimeRangePicker
-          defaultValue={{ value: "today" }}
-          options={(defaultOptions) => {
-            return defaultOptions.map((option) => ({
-              ...option,
-              params: {
-                ...option.params,
-                timestamp: "order_item_generated_at",
-              },
-            }));
-          }}
+          defaultValue={{ value: "last-30-days" }}
         />
         <Counter
           query={{
-            metric: { count: { dataPool: { name: "TacoSoft Demo Data" } } },
+            metric: { count: {} },
           }}
         />
       </FilterProvider>
